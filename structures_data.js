@@ -1,0 +1,3462 @@
+// Auto-generated Hoplite Survival Structure Database
+// Total: 133 structures (17 Hard, 28 Medium, 88 Easy)
+window.HOPLITE_STRUCTURES = [
+  {
+    "tier": "hard",
+    "name": "Hard Fortress #1",
+    "mc_x": -250,
+    "mc_z": 837,
+    "px_x": 459.0,
+    "px_y": 610.9,
+    "bbox_px": [
+      455,
+      608,
+      463,
+      614
+    ],
+    "pixel_count": 27,
+    "size_px": [
+      9,
+      7
+    ],
+    "approx_size_mc": [
+      65,
+      50
+    ],
+    "id": "H-01",
+    "tierLabel": "Hard (Yellow)",
+    "color": "#ffdf20"
+  },
+  {
+    "tier": "hard",
+    "name": "Hard Fortress #2",
+    "mc_x": -903,
+    "mc_z": -206,
+    "px_x": 368.0,
+    "px_y": 465.7,
+    "bbox_px": [
+      351,
+      451,
+      382,
+      481
+    ],
+    "pixel_count": 88,
+    "size_px": [
+      32,
+      31
+    ],
+    "approx_size_mc": [
+      230,
+      223
+    ],
+    "id": "H-02",
+    "tierLabel": "Hard (Yellow)",
+    "color": "#ffdf20"
+  },
+  {
+    "tier": "hard",
+    "name": "Hard Fortress #3",
+    "mc_x": 932,
+    "mc_z": -195,
+    "px_x": 623.6,
+    "px_y": 467.2,
+    "bbox_px": [
+      612,
+      452,
+      637,
+      480
+    ],
+    "pixel_count": 97,
+    "size_px": [
+      26,
+      29
+    ],
+    "approx_size_mc": [
+      187,
+      208
+    ],
+    "id": "H-03",
+    "tierLabel": "Hard (Yellow)",
+    "color": "#ffdf20"
+  },
+  {
+    "tier": "hard",
+    "name": "Hard Fortress #4",
+    "mc_x": 538,
+    "mc_z": -1034,
+    "px_x": 568.8,
+    "px_y": 350.4,
+    "bbox_px": [
+      562,
+      330,
+      576,
+      362
+    ],
+    "pixel_count": 39,
+    "size_px": [
+      15,
+      33
+    ],
+    "approx_size_mc": [
+      108,
+      237
+    ],
+    "id": "H-04",
+    "tierLabel": "Hard (Yellow)",
+    "color": "#ffdf20"
+  },
+  {
+    "tier": "hard",
+    "name": "Hard Fortress #5",
+    "mc_x": -1472,
+    "mc_z": -1141,
+    "px_x": 288.7,
+    "px_y": 335.5,
+    "bbox_px": [
+      277,
+      334,
+      301,
+      336
+    ],
+    "pixel_count": 30,
+    "size_px": [
+      25,
+      3
+    ],
+    "approx_size_mc": [
+      179,
+      22
+    ],
+    "id": "H-05",
+    "tierLabel": "Hard (Yellow)",
+    "color": "#ffdf20"
+  },
+  {
+    "tier": "hard",
+    "name": "Hard Fortress #6",
+    "mc_x": -1470,
+    "mc_z": -1279,
+    "px_x": 289.1,
+    "px_y": 316.2,
+    "bbox_px": [
+      277,
+      316,
+      301,
+      318
+    ],
+    "pixel_count": 24,
+    "size_px": [
+      25,
+      3
+    ],
+    "approx_size_mc": [
+      179,
+      22
+    ],
+    "id": "H-06",
+    "tierLabel": "Hard (Yellow)",
+    "color": "#ffdf20"
+  },
+  {
+    "tier": "hard",
+    "name": "Hard Fortress #7",
+    "mc_x": 2453,
+    "mc_z": -150,
+    "px_x": 835.4,
+    "px_y": 473.4,
+    "bbox_px": [
+      823,
+      460,
+      843,
+      489
+    ],
+    "pixel_count": 75,
+    "size_px": [
+      21,
+      30
+    ],
+    "approx_size_mc": [
+      151,
+      215
+    ],
+    "id": "H-07",
+    "tierLabel": "Hard (Yellow)",
+    "color": "#ffdf20"
+  },
+  {
+    "tier": "hard",
+    "name": "Hard Fortress #8",
+    "mc_x": 792,
+    "mc_z": -2426,
+    "px_x": 604.2,
+    "px_y": 156.5,
+    "bbox_px": [
+      604,
+      144,
+      606,
+      168
+    ],
+    "pixel_count": 26,
+    "size_px": [
+      3,
+      25
+    ],
+    "approx_size_mc": [
+      22,
+      179
+    ],
+    "id": "H-08",
+    "tierLabel": "Hard (Yellow)",
+    "color": "#ffdf20"
+  },
+  {
+    "tier": "hard",
+    "name": "Hard Fortress #9",
+    "mc_x": 931,
+    "mc_z": -2424,
+    "px_x": 623.4,
+    "px_y": 156.7,
+    "bbox_px": [
+      622,
+      144,
+      624,
+      168
+    ],
+    "pixel_count": 29,
+    "size_px": [
+      3,
+      25
+    ],
+    "approx_size_mc": [
+      22,
+      179
+    ],
+    "id": "H-09",
+    "tierLabel": "Hard (Yellow)",
+    "color": "#ffdf20"
+  },
+  {
+    "tier": "hard",
+    "name": "Hard Fortress #10",
+    "mc_x": 2170,
+    "mc_z": -1900,
+    "px_x": 796.1,
+    "px_y": 229.8,
+    "bbox_px": [
+      792,
+      227,
+      800,
+      233
+    ],
+    "pixel_count": 13,
+    "size_px": [
+      9,
+      7
+    ],
+    "approx_size_mc": [
+      65,
+      50
+    ],
+    "id": "H-10",
+    "tierLabel": "Hard (Yellow)",
+    "color": "#ffdf20"
+  },
+  {
+    "tier": "hard",
+    "name": "Hard Fortress #11",
+    "mc_x": 707,
+    "mc_z": 2958,
+    "px_x": 592.3,
+    "px_y": 906.4,
+    "bbox_px": [
+      573,
+      894,
+      601,
+      922
+    ],
+    "pixel_count": 119,
+    "size_px": [
+      29,
+      29
+    ],
+    "approx_size_mc": [
+      208,
+      208
+    ],
+    "id": "H-11",
+    "tierLabel": "Hard (Yellow)",
+    "color": "#ffdf20"
+  },
+  {
+    "tier": "hard",
+    "name": "Hard Fortress #12",
+    "mc_x": -2902,
+    "mc_z": -924,
+    "px_x": 89.6,
+    "px_y": 365.7,
+    "bbox_px": [
+      87,
+      359,
+      95,
+      373
+    ],
+    "pixel_count": 23,
+    "size_px": [
+      9,
+      15
+    ],
+    "approx_size_mc": [
+      65,
+      108
+    ],
+    "id": "H-12",
+    "tierLabel": "Hard (Yellow)",
+    "color": "#ffdf20"
+  },
+  {
+    "tier": "hard",
+    "name": "Hard Fortress #13",
+    "mc_x": -1721,
+    "mc_z": 2572,
+    "px_x": 254.0,
+    "px_y": 852.6,
+    "bbox_px": [
+      246,
+      851,
+      258,
+      859
+    ],
+    "pixel_count": 21,
+    "size_px": [
+      13,
+      9
+    ],
+    "approx_size_mc": [
+      93,
+      65
+    ],
+    "id": "H-13",
+    "tierLabel": "Hard (Yellow)",
+    "color": "#ffdf20"
+  },
+  {
+    "tier": "hard",
+    "name": "Hard Fortress #14",
+    "mc_x": -1132,
+    "mc_z": -2955,
+    "px_x": 336.1,
+    "px_y": 82.8,
+    "bbox_px": [
+      323,
+      71,
+      351,
+      92
+    ],
+    "pixel_count": 83,
+    "size_px": [
+      29,
+      22
+    ],
+    "approx_size_mc": [
+      208,
+      158
+    ],
+    "id": "H-14",
+    "tierLabel": "Hard (Yellow)",
+    "color": "#ffdf20"
+  },
+  {
+    "tier": "hard",
+    "name": "Hard Fortress #15",
+    "mc_x": 1367,
+    "mc_z": -3176,
+    "px_x": 684.2,
+    "px_y": 52.0,
+    "bbox_px": [
+      682,
+      49,
+      688,
+      55
+    ],
+    "pixel_count": 19,
+    "size_px": [
+      7,
+      7
+    ],
+    "approx_size_mc": [
+      50,
+      50
+    ],
+    "id": "H-15",
+    "tierLabel": "Hard (Yellow)",
+    "color": "#ffdf20"
+  },
+  {
+    "tier": "hard",
+    "name": "Hard Fortress #16",
+    "mc_x": 2737,
+    "mc_z": 2150,
+    "px_x": 875.1,
+    "px_y": 793.8,
+    "bbox_px": [
+      864,
+      782,
+      893,
+      804
+    ],
+    "pixel_count": 73,
+    "size_px": [
+      30,
+      23
+    ],
+    "approx_size_mc": [
+      215,
+      165
+    ],
+    "id": "H-16",
+    "tierLabel": "Hard (Yellow)",
+    "color": "#ffdf20"
+  },
+  {
+    "tier": "hard",
+    "name": "Hard Fortress #17",
+    "mc_x": -2218,
+    "mc_z": -3081,
+    "px_x": 184.8,
+    "px_y": 65.3,
+    "bbox_px": [
+      181,
+      62,
+      189,
+      70
+    ],
+    "pixel_count": 23,
+    "size_px": [
+      9,
+      9
+    ],
+    "approx_size_mc": [
+      65,
+      65
+    ],
+    "id": "H-17",
+    "tierLabel": "Hard (Yellow)",
+    "color": "#ffdf20"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #1",
+    "mc_x": 256,
+    "mc_z": -729,
+    "px_x": 529.4,
+    "px_y": 392.9,
+    "bbox_px": [
+      526,
+      390,
+      533,
+      396
+    ],
+    "pixel_count": 23,
+    "size_px": [
+      8,
+      7
+    ],
+    "approx_size_mc": [
+      57,
+      50
+    ],
+    "id": "M-01",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #2",
+    "mc_x": -456,
+    "mc_z": 660,
+    "px_x": 430.3,
+    "px_y": 586.3,
+    "bbox_px": [
+      428,
+      586,
+      432,
+      588
+    ],
+    "pixel_count": 6,
+    "size_px": [
+      5,
+      3
+    ],
+    "approx_size_mc": [
+      36,
+      22
+    ],
+    "id": "M-02",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #3",
+    "mc_x": -1123,
+    "mc_z": 65,
+    "px_x": 337.5,
+    "px_y": 503.5,
+    "bbox_px": [
+      335,
+      501,
+      341,
+      507
+    ],
+    "pixel_count": 11,
+    "size_px": [
+      7,
+      7
+    ],
+    "approx_size_mc": [
+      50,
+      50
+    ],
+    "id": "M-03",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #4",
+    "mc_x": -711,
+    "mc_z": 877,
+    "px_x": 394.8,
+    "px_y": 616.5,
+    "bbox_px": [
+      393,
+      613,
+      398,
+      619
+    ],
+    "pixel_count": 6,
+    "size_px": [
+      6,
+      7
+    ],
+    "approx_size_mc": [
+      43,
+      50
+    ],
+    "id": "M-04",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #5",
+    "mc_x": -182,
+    "mc_z": 1131,
+    "px_x": 468.4,
+    "px_y": 651.9,
+    "bbox_px": [
+      466,
+      649,
+      470,
+      654
+    ],
+    "pixel_count": 10,
+    "size_px": [
+      5,
+      6
+    ],
+    "approx_size_mc": [
+      36,
+      43
+    ],
+    "id": "M-05",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #6",
+    "mc_x": -378,
+    "mc_z": -1265,
+    "px_x": 441.1,
+    "px_y": 318.2,
+    "bbox_px": [
+      439,
+      316,
+      445,
+      322
+    ],
+    "pixel_count": 15,
+    "size_px": [
+      7,
+      7
+    ],
+    "approx_size_mc": [
+      50,
+      50
+    ],
+    "id": "M-06",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #7",
+    "mc_x": 1286,
+    "mc_z": 969,
+    "px_x": 672.9,
+    "px_y": 629.3,
+    "bbox_px": [
+      666,
+      621,
+      679,
+      640
+    ],
+    "pixel_count": 59,
+    "size_px": [
+      14,
+      20
+    ],
+    "approx_size_mc": [
+      101,
+      144
+    ],
+    "id": "M-07",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #8",
+    "mc_x": 252,
+    "mc_z": -1630,
+    "px_x": 528.9,
+    "px_y": 267.4,
+    "bbox_px": [
+      526,
+      265,
+      533,
+      269
+    ],
+    "pixel_count": 18,
+    "size_px": [
+      8,
+      5
+    ],
+    "approx_size_mc": [
+      57,
+      36
+    ],
+    "id": "M-08",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #9",
+    "mc_x": -1711,
+    "mc_z": 507,
+    "px_x": 255.5,
+    "px_y": 565.0,
+    "bbox_px": [
+      252,
+      562,
+      259,
+      568
+    ],
+    "pixel_count": 26,
+    "size_px": [
+      8,
+      7
+    ],
+    "approx_size_mc": [
+      57,
+      50
+    ],
+    "id": "M-09",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #10",
+    "mc_x": 807,
+    "mc_z": -1678,
+    "px_x": 606.2,
+    "px_y": 260.6,
+    "bbox_px": [
+      604,
+      258,
+      608,
+      264
+    ],
+    "pixel_count": 16,
+    "size_px": [
+      5,
+      7
+    ],
+    "approx_size_mc": [
+      36,
+      50
+    ],
+    "id": "M-10",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #11",
+    "mc_x": -1732,
+    "mc_z": 877,
+    "px_x": 252.6,
+    "px_y": 616.5,
+    "bbox_px": [
+      250,
+      615,
+      256,
+      620
+    ],
+    "pixel_count": 15,
+    "size_px": [
+      7,
+      6
+    ],
+    "approx_size_mc": [
+      50,
+      43
+    ],
+    "id": "M-11",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #12",
+    "mc_x": -654,
+    "mc_z": 2066,
+    "px_x": 402.8,
+    "px_y": 782.1,
+    "bbox_px": [
+      399,
+      780,
+      406,
+      786
+    ],
+    "pixel_count": 14,
+    "size_px": [
+      8,
+      7
+    ],
+    "approx_size_mc": [
+      57,
+      50
+    ],
+    "id": "M-12",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #13",
+    "mc_x": -1636,
+    "mc_z": -1425,
+    "px_x": 266.0,
+    "px_y": 295.9,
+    "bbox_px": [
+      264,
+      292,
+      269,
+      298
+    ],
+    "pixel_count": 7,
+    "size_px": [
+      6,
+      7
+    ],
+    "approx_size_mc": [
+      43,
+      50
+    ],
+    "id": "M-13",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #14",
+    "mc_x": 2196,
+    "mc_z": -149,
+    "px_x": 799.6,
+    "px_y": 473.6,
+    "bbox_px": [
+      798,
+      472,
+      804,
+      478
+    ],
+    "pixel_count": 13,
+    "size_px": [
+      7,
+      7
+    ],
+    "approx_size_mc": [
+      50,
+      50
+    ],
+    "id": "M-14",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #15",
+    "mc_x": -451,
+    "mc_z": -2200,
+    "px_x": 431.0,
+    "px_y": 188.0,
+    "bbox_px": [
+      428,
+      185,
+      434,
+      191
+    ],
+    "pixel_count": 14,
+    "size_px": [
+      7,
+      7
+    ],
+    "approx_size_mc": [
+      50,
+      50
+    ],
+    "id": "M-15",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #16",
+    "mc_x": 1298,
+    "mc_z": 2088,
+    "px_x": 674.5,
+    "px_y": 785.2,
+    "bbox_px": [
+      663,
+      776,
+      684,
+      793
+    ],
+    "pixel_count": 71,
+    "size_px": [
+      22,
+      18
+    ],
+    "approx_size_mc": [
+      158,
+      129
+    ],
+    "id": "M-16",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #17",
+    "mc_x": -2003,
+    "mc_z": 1431,
+    "px_x": 214.8,
+    "px_y": 693.7,
+    "bbox_px": [
+      212,
+      691,
+      218,
+      696
+    ],
+    "pixel_count": 13,
+    "size_px": [
+      7,
+      6
+    ],
+    "approx_size_mc": [
+      50,
+      43
+    ],
+    "id": "M-17",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #18",
+    "mc_x": 2409,
+    "mc_z": 624,
+    "px_x": 829.4,
+    "px_y": 581.3,
+    "bbox_px": [
+      827,
+      578,
+      833,
+      583
+    ],
+    "pixel_count": 14,
+    "size_px": [
+      7,
+      6
+    ],
+    "approx_size_mc": [
+      50,
+      43
+    ],
+    "id": "M-18",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #19",
+    "mc_x": 2134,
+    "mc_z": 1429,
+    "px_x": 791.1,
+    "px_y": 693.4,
+    "bbox_px": [
+      789,
+      691,
+      795,
+      694
+    ],
+    "pixel_count": 10,
+    "size_px": [
+      7,
+      4
+    ],
+    "approx_size_mc": [
+      50,
+      29
+    ],
+    "id": "M-19",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #20",
+    "mc_x": 2466,
+    "mc_z": -1156,
+    "px_x": 837.2,
+    "px_y": 333.3,
+    "bbox_px": [
+      836,
+      330,
+      840,
+      335
+    ],
+    "pixel_count": 9,
+    "size_px": [
+      5,
+      6
+    ],
+    "approx_size_mc": [
+      36,
+      43
+    ],
+    "id": "M-20",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #21",
+    "mc_x": 1875,
+    "mc_z": 2126,
+    "px_x": 755.0,
+    "px_y": 790.5,
+    "bbox_px": [
+      752,
+      787,
+      756,
+      792
+    ],
+    "pixel_count": 10,
+    "size_px": [
+      5,
+      6
+    ],
+    "approx_size_mc": [
+      36,
+      43
+    ],
+    "id": "M-21",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #22",
+    "mc_x": 2221,
+    "mc_z": 1809,
+    "px_x": 803.1,
+    "px_y": 746.4,
+    "bbox_px": [
+      801,
+      744,
+      806,
+      748
+    ],
+    "pixel_count": 10,
+    "size_px": [
+      6,
+      5
+    ],
+    "approx_size_mc": [
+      43,
+      36
+    ],
+    "id": "M-22",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #23",
+    "mc_x": -3003,
+    "mc_z": -56,
+    "px_x": 75.5,
+    "px_y": 486.6,
+    "bbox_px": [
+      73,
+      484,
+      78,
+      488
+    ],
+    "pixel_count": 14,
+    "size_px": [
+      6,
+      5
+    ],
+    "approx_size_mc": [
+      43,
+      36
+    ],
+    "id": "M-23",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #24",
+    "mc_x": 2426,
+    "mc_z": 1787,
+    "px_x": 831.7,
+    "px_y": 743.3,
+    "bbox_px": [
+      830,
+      740,
+      836,
+      746
+    ],
+    "pixel_count": 13,
+    "size_px": [
+      7,
+      7
+    ],
+    "approx_size_mc": [
+      50,
+      50
+    ],
+    "id": "M-24",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #25",
+    "mc_x": 2175,
+    "mc_z": -2276,
+    "px_x": 796.7,
+    "px_y": 177.3,
+    "bbox_px": [
+      794,
+      174,
+      800,
+      180
+    ],
+    "pixel_count": 10,
+    "size_px": [
+      7,
+      7
+    ],
+    "approx_size_mc": [
+      50,
+      50
+    ],
+    "id": "M-25",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #26",
+    "mc_x": 2439,
+    "mc_z": 2082,
+    "px_x": 833.5,
+    "px_y": 784.3,
+    "bbox_px": [
+      831,
+      782,
+      836,
+      786
+    ],
+    "pixel_count": 12,
+    "size_px": [
+      6,
+      5
+    ],
+    "approx_size_mc": [
+      43,
+      36
+    ],
+    "id": "M-26",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #27",
+    "mc_x": 1546,
+    "mc_z": 2825,
+    "px_x": 709.2,
+    "px_y": 887.8,
+    "bbox_px": [
+      707,
+      885,
+      713,
+      891
+    ],
+    "pixel_count": 19,
+    "size_px": [
+      7,
+      7
+    ],
+    "approx_size_mc": [
+      50,
+      50
+    ],
+    "id": "M-27",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "medium",
+    "name": "Medium Outpost #28",
+    "mc_x": 3273,
+    "mc_z": -177,
+    "px_x": 949.7,
+    "px_y": 469.7,
+    "bbox_px": [
+      946,
+      468,
+      951,
+      473
+    ],
+    "pixel_count": 12,
+    "size_px": [
+      6,
+      6
+    ],
+    "approx_size_mc": [
+      43,
+      43
+    ],
+    "id": "M-28",
+    "tierLabel": "Medium (Purple)",
+    "color": "#c058f5"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #1",
+    "mc_x": 271,
+    "mc_z": -370,
+    "px_x": 531.6,
+    "px_y": 442.9,
+    "bbox_px": [
+      529,
+      442,
+      533,
+      445
+    ],
+    "pixel_count": 7,
+    "size_px": [
+      5,
+      4
+    ],
+    "approx_size_mc": [
+      36,
+      29
+    ],
+    "id": "E-01",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #2",
+    "mc_x": -480,
+    "mc_z": -101,
+    "px_x": 427.0,
+    "px_y": 480.2,
+    "bbox_px": [
+      426,
+      479,
+      428,
+      482
+    ],
+    "pixel_count": 8,
+    "size_px": [
+      3,
+      4
+    ],
+    "approx_size_mc": [
+      22,
+      29
+    ],
+    "id": "E-02",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #3",
+    "mc_x": -464,
+    "mc_z": 313,
+    "px_x": 429.1,
+    "px_y": 538.0,
+    "bbox_px": [
+      428,
+      537,
+      430,
+      539
+    ],
+    "pixel_count": 7,
+    "size_px": [
+      3,
+      3
+    ],
+    "approx_size_mc": [
+      22,
+      22
+    ],
+    "id": "E-03",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #4",
+    "mc_x": -192,
+    "mc_z": 622,
+    "px_x": 467.0,
+    "px_y": 581.0,
+    "bbox_px": [
+      465,
+      579,
+      470,
+      583
+    ],
+    "pixel_count": 15,
+    "size_px": [
+      6,
+      5
+    ],
+    "approx_size_mc": [
+      43,
+      36
+    ],
+    "id": "E-04",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #5",
+    "mc_x": -608,
+    "mc_z": 311,
+    "px_x": 409.2,
+    "px_y": 537.7,
+    "bbox_px": [
+      406,
+      535,
+      412,
+      541
+    ],
+    "pixel_count": 21,
+    "size_px": [
+      7,
+      7
+    ],
+    "approx_size_mc": [
+      50,
+      50
+    ],
+    "id": "E-05",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #6",
+    "mc_x": -818,
+    "mc_z": 614,
+    "px_x": 379.9,
+    "px_y": 579.9,
+    "bbox_px": [
+      377,
+      579,
+      383,
+      582
+    ],
+    "pixel_count": 13,
+    "size_px": [
+      7,
+      4
+    ],
+    "approx_size_mc": [
+      50,
+      29
+    ],
+    "id": "E-06",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #7",
+    "mc_x": -1127,
+    "mc_z": -750,
+    "px_x": 336.9,
+    "px_y": 389.9,
+    "bbox_px": [
+      335,
+      388,
+      341,
+      393
+    ],
+    "pixel_count": 7,
+    "size_px": [
+      7,
+      6
+    ],
+    "approx_size_mc": [
+      50,
+      43
+    ],
+    "id": "E-07",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #8",
+    "mc_x": 1100,
+    "mc_z": 870,
+    "px_x": 647.0,
+    "px_y": 615.5,
+    "bbox_px": [
+      645,
+      615,
+      648,
+      617
+    ],
+    "pixel_count": 6,
+    "size_px": [
+      4,
+      3
+    ],
+    "approx_size_mc": [
+      29,
+      22
+    ],
+    "id": "E-08",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #9",
+    "mc_x": 1315,
+    "mc_z": 521,
+    "px_x": 677.0,
+    "px_y": 566.9,
+    "bbox_px": [
+      674,
+      564,
+      680,
+      570
+    ],
+    "pixel_count": 12,
+    "size_px": [
+      7,
+      7
+    ],
+    "approx_size_mc": [
+      50,
+      50
+    ],
+    "id": "E-09",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #10",
+    "mc_x": -1438,
+    "mc_z": -153,
+    "px_x": 293.5,
+    "px_y": 473.0,
+    "bbox_px": [
+      292,
+      470,
+      296,
+      476
+    ],
+    "pixel_count": 14,
+    "size_px": [
+      5,
+      7
+    ],
+    "approx_size_mc": [
+      36,
+      50
+    ],
+    "id": "E-10",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #11",
+    "mc_x": -185,
+    "mc_z": 1483,
+    "px_x": 468.0,
+    "px_y": 701.0,
+    "bbox_px": [
+      466,
+      698,
+      470,
+      703
+    ],
+    "pixel_count": 15,
+    "size_px": [
+      5,
+      6
+    ],
+    "approx_size_mc": [
+      36,
+      43
+    ],
+    "id": "E-11",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #12",
+    "mc_x": 336,
+    "mc_z": -1478,
+    "px_x": 540.7,
+    "px_y": 288.5,
+    "bbox_px": [
+      539,
+      286,
+      544,
+      291
+    ],
+    "pixel_count": 15,
+    "size_px": [
+      6,
+      6
+    ],
+    "approx_size_mc": [
+      43,
+      43
+    ],
+    "id": "E-12",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #13",
+    "mc_x": -1469,
+    "mc_z": -376,
+    "px_x": 289.2,
+    "px_y": 442.0,
+    "bbox_px": [
+      288,
+      440,
+      292,
+      443
+    ],
+    "pixel_count": 8,
+    "size_px": [
+      5,
+      4
+    ],
+    "approx_size_mc": [
+      36,
+      29
+    ],
+    "id": "E-13",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #14",
+    "mc_x": 586,
+    "mc_z": -1429,
+    "px_x": 575.5,
+    "px_y": 295.3,
+    "bbox_px": [
+      573,
+      294,
+      579,
+      297
+    ],
+    "pixel_count": 15,
+    "size_px": [
+      7,
+      4
+    ],
+    "approx_size_mc": [
+      50,
+      29
+    ],
+    "id": "E-14",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #15",
+    "mc_x": -152,
+    "mc_z": 1645,
+    "px_x": 472.6,
+    "px_y": 723.4,
+    "bbox_px": [
+      471,
+      722,
+      473,
+      726
+    ],
+    "pixel_count": 7,
+    "size_px": [
+      3,
+      5
+    ],
+    "approx_size_mc": [
+      22,
+      36
+    ],
+    "id": "E-15",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #16",
+    "mc_x": -1765,
+    "mc_z": 5,
+    "px_x": 248.0,
+    "px_y": 495.0,
+    "bbox_px": [
+      247,
+      494,
+      249,
+      496
+    ],
+    "pixel_count": 8,
+    "size_px": [
+      3,
+      3
+    ],
+    "approx_size_mc": [
+      22,
+      22
+    ],
+    "id": "E-16",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #17",
+    "mc_x": 1876,
+    "mc_z": -139,
+    "px_x": 755.1,
+    "px_y": 475.0,
+    "bbox_px": [
+      754,
+      474,
+      756,
+      476
+    ],
+    "pixel_count": 7,
+    "size_px": [
+      3,
+      3
+    ],
+    "approx_size_mc": [
+      22,
+      22
+    ],
+    "id": "E-17",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #18",
+    "mc_x": -1651,
+    "mc_z": -907,
+    "px_x": 263.9,
+    "px_y": 368.0,
+    "bbox_px": [
+      263,
+      367,
+      265,
+      369
+    ],
+    "pixel_count": 7,
+    "size_px": [
+      3,
+      3
+    ],
+    "approx_size_mc": [
+      22,
+      22
+    ],
+    "id": "E-18",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #19",
+    "mc_x": -1365,
+    "mc_z": 1304,
+    "px_x": 303.7,
+    "px_y": 676.0,
+    "bbox_px": [
+      301,
+      673,
+      307,
+      679
+    ],
+    "pixel_count": 19,
+    "size_px": [
+      7,
+      7
+    ],
+    "approx_size_mc": [
+      50,
+      50
+    ],
+    "id": "E-19",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #20",
+    "mc_x": 1330,
+    "mc_z": -1370,
+    "px_x": 679.0,
+    "px_y": 303.5,
+    "bbox_px": [
+      676,
+      300,
+      680,
+      305
+    ],
+    "pixel_count": 10,
+    "size_px": [
+      5,
+      6
+    ],
+    "approx_size_mc": [
+      36,
+      43
+    ],
+    "id": "E-20",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #21",
+    "mc_x": -462,
+    "mc_z": -1932,
+    "px_x": 429.5,
+    "px_y": 225.3,
+    "bbox_px": [
+      428,
+      223,
+      431,
+      227
+    ],
+    "pixel_count": 12,
+    "size_px": [
+      4,
+      5
+    ],
+    "approx_size_mc": [
+      29,
+      36
+    ],
+    "id": "E-21",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #22",
+    "mc_x": -2024,
+    "mc_z": -197,
+    "px_x": 211.8,
+    "px_y": 467.0,
+    "bbox_px": [
+      211,
+      466,
+      214,
+      468
+    ],
+    "pixel_count": 6,
+    "size_px": [
+      4,
+      3
+    ],
+    "approx_size_mc": [
+      29,
+      22
+    ],
+    "id": "E-22",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #23",
+    "mc_x": -818,
+    "mc_z": -1891,
+    "px_x": 379.8,
+    "px_y": 231.0,
+    "bbox_px": [
+      377,
+      230,
+      383,
+      232
+    ],
+    "pixel_count": 6,
+    "size_px": [
+      7,
+      3
+    ],
+    "approx_size_mc": [
+      50,
+      22
+    ],
+    "id": "E-23",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #24",
+    "mc_x": -598,
+    "mc_z": -2002,
+    "px_x": 410.5,
+    "px_y": 215.5,
+    "bbox_px": [
+      409,
+      213,
+      412,
+      218
+    ],
+    "pixel_count": 8,
+    "size_px": [
+      4,
+      6
+    ],
+    "approx_size_mc": [
+      29,
+      43
+    ],
+    "id": "E-24",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #25",
+    "mc_x": -336,
+    "mc_z": 2112,
+    "px_x": 447.0,
+    "px_y": 788.5,
+    "bbox_px": [
+      445,
+      786,
+      448,
+      791
+    ],
+    "pixel_count": 12,
+    "size_px": [
+      4,
+      6
+    ],
+    "approx_size_mc": [
+      29,
+      43
+    ],
+    "id": "E-25",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #26",
+    "mc_x": -191,
+    "mc_z": -2172,
+    "px_x": 467.2,
+    "px_y": 191.9,
+    "bbox_px": [
+      466,
+      191,
+      469,
+      193
+    ],
+    "pixel_count": 9,
+    "size_px": [
+      4,
+      3
+    ],
+    "approx_size_mc": [
+      29,
+      22
+    ],
+    "id": "E-26",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #27",
+    "mc_x": -1966,
+    "mc_z": 1187,
+    "px_x": 219.9,
+    "px_y": 659.8,
+    "bbox_px": [
+      217,
+      657,
+      221,
+      663
+    ],
+    "pixel_count": 12,
+    "size_px": [
+      5,
+      7
+    ],
+    "approx_size_mc": [
+      36,
+      50
+    ],
+    "id": "E-27",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #28",
+    "mc_x": 1954,
+    "mc_z": -1255,
+    "px_x": 766.0,
+    "px_y": 319.5,
+    "bbox_px": [
+      765,
+      319,
+      767,
+      320
+    ],
+    "pixel_count": 6,
+    "size_px": [
+      3,
+      2
+    ],
+    "approx_size_mc": [
+      22,
+      14
+    ],
+    "id": "E-28",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #29",
+    "mc_x": -2296,
+    "mc_z": -477,
+    "px_x": 174.0,
+    "px_y": 428.0,
+    "bbox_px": [
+      172,
+      425,
+      176,
+      430
+    ],
+    "pixel_count": 15,
+    "size_px": [
+      5,
+      6
+    ],
+    "approx_size_mc": [
+      36,
+      43
+    ],
+    "id": "E-29",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #30",
+    "mc_x": 1610,
+    "mc_z": -1711,
+    "px_x": 718.1,
+    "px_y": 256.0,
+    "bbox_px": [
+      716,
+      252,
+      719,
+      258
+    ],
+    "pixel_count": 8,
+    "size_px": [
+      4,
+      7
+    ],
+    "approx_size_mc": [
+      29,
+      50
+    ],
+    "id": "E-30",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #31",
+    "mc_x": -1426,
+    "mc_z": -1883,
+    "px_x": 295.1,
+    "px_y": 232.1,
+    "bbox_px": [
+      294,
+      231,
+      296,
+      233
+    ],
+    "pixel_count": 7,
+    "size_px": [
+      3,
+      3
+    ],
+    "approx_size_mc": [
+      22,
+      22
+    ],
+    "id": "E-31",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #32",
+    "mc_x": -2017,
+    "mc_z": -1274,
+    "px_x": 212.9,
+    "px_y": 316.9,
+    "bbox_px": [
+      212,
+      316,
+      214,
+      318
+    ],
+    "pixel_count": 7,
+    "size_px": [
+      3,
+      3
+    ],
+    "approx_size_mc": [
+      22,
+      22
+    ],
+    "id": "E-32",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #33",
+    "mc_x": -971,
+    "mc_z": -2221,
+    "px_x": 358.5,
+    "px_y": 185.0,
+    "bbox_px": [
+      356,
+      183,
+      361,
+      186
+    ],
+    "pixel_count": 12,
+    "size_px": [
+      6,
+      4
+    ],
+    "approx_size_mc": [
+      43,
+      29
+    ],
+    "id": "E-33",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #34",
+    "mc_x": -2257,
+    "mc_z": -918,
+    "px_x": 179.5,
+    "px_y": 366.5,
+    "bbox_px": [
+      179,
+      365,
+      180,
+      368
+    ],
+    "pixel_count": 8,
+    "size_px": [
+      2,
+      4
+    ],
+    "approx_size_mc": [
+      14,
+      29
+    ],
+    "id": "E-34",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #35",
+    "mc_x": 2399,
+    "mc_z": -456,
+    "px_x": 828.0,
+    "px_y": 430.8,
+    "bbox_px": [
+      827,
+      430,
+      829,
+      432
+    ],
+    "pixel_count": 6,
+    "size_px": [
+      3,
+      3
+    ],
+    "approx_size_mc": [
+      22,
+      22
+    ],
+    "id": "E-35",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #36",
+    "mc_x": 1195,
+    "mc_z": -2137,
+    "px_x": 660.2,
+    "px_y": 196.7,
+    "bbox_px": [
+      658,
+      194,
+      662,
+      199
+    ],
+    "pixel_count": 13,
+    "size_px": [
+      5,
+      6
+    ],
+    "approx_size_mc": [
+      36,
+      43
+    ],
+    "id": "E-36",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #37",
+    "mc_x": 2396,
+    "mc_z": -652,
+    "px_x": 827.5,
+    "px_y": 403.5,
+    "bbox_px": [
+      825,
+      402,
+      830,
+      405
+    ],
+    "pixel_count": 8,
+    "size_px": [
+      6,
+      4
+    ],
+    "approx_size_mc": [
+      43,
+      29
+    ],
+    "id": "E-37",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #38",
+    "mc_x": -2474,
+    "mc_z": 377,
+    "px_x": 149.2,
+    "px_y": 546.9,
+    "bbox_px": [
+      147,
+      546,
+      151,
+      548
+    ],
+    "pixel_count": 11,
+    "size_px": [
+      5,
+      3
+    ],
+    "approx_size_mc": [
+      36,
+      22
+    ],
+    "id": "E-38",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #39",
+    "mc_x": -994,
+    "mc_z": 2335,
+    "px_x": 355.3,
+    "px_y": 819.7,
+    "bbox_px": [
+      353,
+      818,
+      356,
+      823
+    ],
+    "pixel_count": 9,
+    "size_px": [
+      4,
+      6
+    ],
+    "approx_size_mc": [
+      29,
+      43
+    ],
+    "id": "E-39",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #40",
+    "mc_x": -1260,
+    "mc_z": 2228,
+    "px_x": 318.3,
+    "px_y": 804.7,
+    "bbox_px": [
+      315,
+      802,
+      321,
+      808
+    ],
+    "pixel_count": 10,
+    "size_px": [
+      7,
+      7
+    ],
+    "approx_size_mc": [
+      50,
+      50
+    ],
+    "id": "E-40",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #41",
+    "mc_x": 2374,
+    "mc_z": 1077,
+    "px_x": 824.4,
+    "px_y": 644.4,
+    "bbox_px": [
+      822,
+      644,
+      826,
+      645
+    ],
+    "pixel_count": 7,
+    "size_px": [
+      5,
+      2
+    ],
+    "approx_size_mc": [
+      36,
+      14
+    ],
+    "id": "E-41",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #42",
+    "mc_x": -194,
+    "mc_z": 2697,
+    "px_x": 466.8,
+    "px_y": 870.1,
+    "bbox_px": [
+      466,
+      867,
+      469,
+      873
+    ],
+    "pixel_count": 11,
+    "size_px": [
+      4,
+      7
+    ],
+    "approx_size_mc": [
+      29,
+      50
+    ],
+    "id": "E-42",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #43",
+    "mc_x": -2706,
+    "mc_z": 120,
+    "px_x": 116.9,
+    "px_y": 511.1,
+    "bbox_px": [
+      116,
+      509,
+      119,
+      512
+    ],
+    "pixel_count": 7,
+    "size_px": [
+      4,
+      4
+    ],
+    "approx_size_mc": [
+      29,
+      29
+    ],
+    "id": "E-43",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #44",
+    "mc_x": -2729,
+    "mc_z": 272,
+    "px_x": 113.8,
+    "px_y": 532.2,
+    "bbox_px": [
+      113,
+      530,
+      115,
+      534
+    ],
+    "pixel_count": 8,
+    "size_px": [
+      3,
+      5
+    ],
+    "approx_size_mc": [
+      22,
+      36
+    ],
+    "id": "E-44",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #45",
+    "mc_x": 1340,
+    "mc_z": 2410,
+    "px_x": 680.5,
+    "px_y": 830.0,
+    "bbox_px": [
+      680,
+      829,
+      681,
+      831
+    ],
+    "pixel_count": 6,
+    "size_px": [
+      2,
+      3
+    ],
+    "approx_size_mc": [
+      14,
+      22
+    ],
+    "id": "E-45",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #46",
+    "mc_x": -2522,
+    "mc_z": -1130,
+    "px_x": 142.5,
+    "px_y": 337.0,
+    "bbox_px": [
+      141,
+      336,
+      144,
+      338
+    ],
+    "pixel_count": 8,
+    "size_px": [
+      4,
+      3
+    ],
+    "approx_size_mc": [
+      29,
+      22
+    ],
+    "id": "E-46",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #47",
+    "mc_x": 2179,
+    "mc_z": -1778,
+    "px_x": 797.2,
+    "px_y": 246.8,
+    "bbox_px": [
+      796,
+      246,
+      800,
+      249
+    ],
+    "pixel_count": 8,
+    "size_px": [
+      5,
+      4
+    ],
+    "approx_size_mc": [
+      36,
+      29
+    ],
+    "id": "E-47",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #48",
+    "mc_x": -2444,
+    "mc_z": -1435,
+    "px_x": 153.4,
+    "px_y": 294.4,
+    "bbox_px": [
+      151,
+      294,
+      155,
+      295
+    ],
+    "pixel_count": 7,
+    "size_px": [
+      5,
+      2
+    ],
+    "approx_size_mc": [
+      36,
+      14
+    ],
+    "id": "E-48",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #49",
+    "mc_x": -863,
+    "mc_z": 2701,
+    "px_x": 373.7,
+    "px_y": 870.5,
+    "bbox_px": [
+      372,
+      868,
+      377,
+      873
+    ],
+    "pixel_count": 15,
+    "size_px": [
+      6,
+      6
+    ],
+    "approx_size_mc": [
+      43,
+      43
+    ],
+    "id": "E-49",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #50",
+    "mc_x": 1886,
+    "mc_z": -2149,
+    "px_x": 756.5,
+    "px_y": 195.0,
+    "bbox_px": [
+      756,
+      194,
+      757,
+      196
+    ],
+    "pixel_count": 6,
+    "size_px": [
+      2,
+      3
+    ],
+    "approx_size_mc": [
+      14,
+      22
+    ],
+    "id": "E-50",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #51",
+    "mc_x": -2290,
+    "mc_z": -1739,
+    "px_x": 174.9,
+    "px_y": 252.1,
+    "bbox_px": [
+      174,
+      251,
+      176,
+      253
+    ],
+    "pixel_count": 7,
+    "size_px": [
+      3,
+      3
+    ],
+    "approx_size_mc": [
+      22,
+      22
+    ],
+    "id": "E-51",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #52",
+    "mc_x": -1554,
+    "mc_z": -2453,
+    "px_x": 277.4,
+    "px_y": 152.7,
+    "bbox_px": [
+      276,
+      150,
+      280,
+      156
+    ],
+    "pixel_count": 15,
+    "size_px": [
+      5,
+      7
+    ],
+    "approx_size_mc": [
+      36,
+      50
+    ],
+    "id": "E-52",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #53",
+    "mc_x": -735,
+    "mc_z": 2826,
+    "px_x": 391.5,
+    "px_y": 888.0,
+    "bbox_px": [
+      390,
+      887,
+      393,
+      889
+    ],
+    "pixel_count": 10,
+    "size_px": [
+      4,
+      3
+    ],
+    "approx_size_mc": [
+      29,
+      22
+    ],
+    "id": "E-53",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #54",
+    "mc_x": -1202,
+    "mc_z": 2672,
+    "px_x": 326.4,
+    "px_y": 866.5,
+    "bbox_px": [
+      325,
+      864,
+      330,
+      869
+    ],
+    "pixel_count": 8,
+    "size_px": [
+      6,
+      6
+    ],
+    "approx_size_mc": [
+      43,
+      43
+    ],
+    "id": "E-54",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #55",
+    "mc_x": 2348,
+    "mc_z": -1772,
+    "px_x": 820.9,
+    "px_y": 247.6,
+    "bbox_px": [
+      818,
+      246,
+      825,
+      249
+    ],
+    "pixel_count": 12,
+    "size_px": [
+      8,
+      4
+    ],
+    "approx_size_mc": [
+      57,
+      29
+    ],
+    "id": "E-55",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #56",
+    "mc_x": 2844,
+    "mc_z": -895,
+    "px_x": 889.9,
+    "px_y": 369.7,
+    "bbox_px": [
+      888,
+      368,
+      892,
+      371
+    ],
+    "pixel_count": 12,
+    "size_px": [
+      5,
+      4
+    ],
+    "approx_size_mc": [
+      36,
+      29
+    ],
+    "id": "E-56",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #57",
+    "mc_x": -2279,
+    "mc_z": 1940,
+    "px_x": 176.4,
+    "px_y": 764.6,
+    "bbox_px": [
+      174,
+      763,
+      180,
+      766
+    ],
+    "pixel_count": 10,
+    "size_px": [
+      7,
+      4
+    ],
+    "approx_size_mc": [
+      50,
+      29
+    ],
+    "id": "E-57",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #58",
+    "mc_x": 1339,
+    "mc_z": 2680,
+    "px_x": 680.3,
+    "px_y": 867.7,
+    "bbox_px": [
+      677,
+      867,
+      682,
+      870
+    ],
+    "pixel_count": 9,
+    "size_px": [
+      6,
+      4
+    ],
+    "approx_size_mc": [
+      43,
+      29
+    ],
+    "id": "E-58",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #59",
+    "mc_x": -2786,
+    "mc_z": -1110,
+    "px_x": 105.8,
+    "px_y": 339.8,
+    "bbox_px": [
+      103,
+      337,
+      109,
+      342
+    ],
+    "pixel_count": 10,
+    "size_px": [
+      7,
+      6
+    ],
+    "approx_size_mc": [
+      50,
+      43
+    ],
+    "id": "E-59",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #60",
+    "mc_x": 1680,
+    "mc_z": -2487,
+    "px_x": 727.9,
+    "px_y": 148.0,
+    "bbox_px": [
+      727,
+      147,
+      729,
+      149
+    ],
+    "pixel_count": 7,
+    "size_px": [
+      3,
+      3
+    ],
+    "approx_size_mc": [
+      22,
+      22
+    ],
+    "id": "E-60",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #61",
+    "mc_x": 1566,
+    "mc_z": 2575,
+    "px_x": 712.0,
+    "px_y": 853.0,
+    "bbox_px": [
+      710,
+      851,
+      715,
+      855
+    ],
+    "pixel_count": 15,
+    "size_px": [
+      6,
+      5
+    ],
+    "approx_size_mc": [
+      43,
+      36
+    ],
+    "id": "E-61",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #62",
+    "mc_x": 1143,
+    "mc_z": 2881,
+    "px_x": 653.0,
+    "px_y": 895.7,
+    "bbox_px": [
+      651,
+      895,
+      655,
+      897
+    ],
+    "pixel_count": 9,
+    "size_px": [
+      5,
+      3
+    ],
+    "approx_size_mc": [
+      36,
+      22
+    ],
+    "id": "E-62",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #63",
+    "mc_x": -3025,
+    "mc_z": -749,
+    "px_x": 72.5,
+    "px_y": 390.0,
+    "bbox_px": [
+      72,
+      389,
+      73,
+      391
+    ],
+    "pixel_count": 6,
+    "size_px": [
+      2,
+      3
+    ],
+    "approx_size_mc": [
+      14,
+      22
+    ],
+    "id": "E-63",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #64",
+    "mc_x": 1801,
+    "mc_z": 2564,
+    "px_x": 744.7,
+    "px_y": 851.5,
+    "bbox_px": [
+      744,
+      850,
+      746,
+      853
+    ],
+    "pixel_count": 6,
+    "size_px": [
+      3,
+      4
+    ],
+    "approx_size_mc": [
+      22,
+      29
+    ],
+    "id": "E-64",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #65",
+    "mc_x": -1381,
+    "mc_z": 2826,
+    "px_x": 301.5,
+    "px_y": 888.0,
+    "bbox_px": [
+      301,
+      887,
+      302,
+      889
+    ],
+    "pixel_count": 6,
+    "size_px": [
+      2,
+      3
+    ],
+    "approx_size_mc": [
+      14,
+      22
+    ],
+    "id": "E-65",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #66",
+    "mc_x": 3164,
+    "mc_z": 597,
+    "px_x": 934.5,
+    "px_y": 577.5,
+    "bbox_px": [
+      933,
+      577,
+      936,
+      578
+    ],
+    "pixel_count": 8,
+    "size_px": [
+      4,
+      2
+    ],
+    "approx_size_mc": [
+      29,
+      14
+    ],
+    "id": "E-66",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #67",
+    "mc_x": 359,
+    "mc_z": -3215,
+    "px_x": 543.9,
+    "px_y": 46.5,
+    "bbox_px": [
+      542,
+      44,
+      547,
+      49
+    ],
+    "pixel_count": 16,
+    "size_px": [
+      6,
+      6
+    ],
+    "approx_size_mc": [
+      43,
+      43
+    ],
+    "id": "E-67",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #68",
+    "mc_x": -1778,
+    "mc_z": 2733,
+    "px_x": 246.2,
+    "px_y": 875.0,
+    "bbox_px": [
+      245,
+      874,
+      247,
+      876
+    ],
+    "pixel_count": 6,
+    "size_px": [
+      3,
+      3
+    ],
+    "approx_size_mc": [
+      22,
+      22
+    ],
+    "id": "E-68",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #69",
+    "mc_x": -3137,
+    "mc_z": 937,
+    "px_x": 56.9,
+    "px_y": 624.9,
+    "bbox_px": [
+      56,
+      624,
+      58,
+      626
+    ],
+    "pixel_count": 7,
+    "size_px": [
+      3,
+      3
+    ],
+    "approx_size_mc": [
+      22,
+      22
+    ],
+    "id": "E-69",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #70",
+    "mc_x": -828,
+    "mc_z": -3176,
+    "px_x": 378.5,
+    "px_y": 52.0,
+    "bbox_px": [
+      377,
+      51,
+      382,
+      55
+    ],
+    "pixel_count": 10,
+    "size_px": [
+      6,
+      5
+    ],
+    "approx_size_mc": [
+      43,
+      36
+    ],
+    "id": "E-70",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #71",
+    "mc_x": 3171,
+    "mc_z": 859,
+    "px_x": 935.5,
+    "px_y": 614.0,
+    "bbox_px": [
+      934,
+      611,
+      939,
+      615
+    ],
+    "pixel_count": 10,
+    "size_px": [
+      6,
+      5
+    ],
+    "approx_size_mc": [
+      43,
+      36
+    ],
+    "id": "E-71",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #72",
+    "mc_x": 2688,
+    "mc_z": 1902,
+    "px_x": 868.2,
+    "px_y": 759.3,
+    "bbox_px": [
+      867,
+      758,
+      869,
+      760
+    ],
+    "pixel_count": 6,
+    "size_px": [
+      3,
+      3
+    ],
+    "approx_size_mc": [
+      22,
+      22
+    ],
+    "id": "E-72",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #73",
+    "mc_x": 3182,
+    "mc_z": -856,
+    "px_x": 937.0,
+    "px_y": 375.1,
+    "bbox_px": [
+      936,
+      374,
+      938,
+      376
+    ],
+    "pixel_count": 7,
+    "size_px": [
+      3,
+      3
+    ],
+    "approx_size_mc": [
+      22,
+      22
+    ],
+    "id": "E-73",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #74",
+    "mc_x": 3124,
+    "mc_z": 1139,
+    "px_x": 928.9,
+    "px_y": 653.0,
+    "bbox_px": [
+      925,
+      651,
+      932,
+      655
+    ],
+    "pixel_count": 15,
+    "size_px": [
+      8,
+      5
+    ],
+    "approx_size_mc": [
+      57,
+      36
+    ],
+    "id": "E-74",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #75",
+    "mc_x": -3015,
+    "mc_z": -1597,
+    "px_x": 73.9,
+    "px_y": 271.9,
+    "bbox_px": [
+      72,
+      270,
+      76,
+      275
+    ],
+    "pixel_count": 9,
+    "size_px": [
+      5,
+      6
+    ],
+    "approx_size_mc": [
+      36,
+      43
+    ],
+    "id": "E-75",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #76",
+    "mc_x": -1987,
+    "mc_z": 2826,
+    "px_x": 217.0,
+    "px_y": 888.0,
+    "bbox_px": [
+      216,
+      887,
+      218,
+      889
+    ],
+    "pixel_count": 8,
+    "size_px": [
+      3,
+      3
+    ],
+    "approx_size_mc": [
+      22,
+      22
+    ],
+    "id": "E-76",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #77",
+    "mc_x": -1874,
+    "mc_z": -2918,
+    "px_x": 232.8,
+    "px_y": 88.0,
+    "bbox_px": [
+      232,
+      87,
+      234,
+      89
+    ],
+    "pixel_count": 6,
+    "size_px": [
+      3,
+      3
+    ],
+    "approx_size_mc": [
+      22,
+      22
+    ],
+    "id": "E-77",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #78",
+    "mc_x": 2455,
+    "mc_z": 2487,
+    "px_x": 835.8,
+    "px_y": 840.8,
+    "bbox_px": [
+      832,
+      840,
+      838,
+      843
+    ],
+    "pixel_count": 11,
+    "size_px": [
+      7,
+      4
+    ],
+    "approx_size_mc": [
+      50,
+      29
+    ],
+    "id": "E-78",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #79",
+    "mc_x": 2228,
+    "mc_z": -2695,
+    "px_x": 804.1,
+    "px_y": 119.0,
+    "bbox_px": [
+      803,
+      118,
+      805,
+      120
+    ],
+    "pixel_count": 7,
+    "size_px": [
+      3,
+      3
+    ],
+    "approx_size_mc": [
+      22,
+      22
+    ],
+    "id": "E-79",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #80",
+    "mc_x": 3163,
+    "mc_z": 1615,
+    "px_x": 934.4,
+    "px_y": 719.3,
+    "bbox_px": [
+      933,
+      718,
+      936,
+      720
+    ],
+    "pixel_count": 7,
+    "size_px": [
+      4,
+      3
+    ],
+    "approx_size_mc": [
+      29,
+      22
+    ],
+    "id": "E-80",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #81",
+    "mc_x": -2990,
+    "mc_z": -2218,
+    "px_x": 77.3,
+    "px_y": 185.5,
+    "bbox_px": [
+      74,
+      183,
+      80,
+      188
+    ],
+    "pixel_count": 10,
+    "size_px": [
+      7,
+      6
+    ],
+    "approx_size_mc": [
+      50,
+      43
+    ],
+    "id": "E-81",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #82",
+    "mc_x": 2999,
+    "mc_z": 2331,
+    "px_x": 911.5,
+    "px_y": 819.0,
+    "bbox_px": [
+      908,
+      816,
+      913,
+      820
+    ],
+    "pixel_count": 10,
+    "size_px": [
+      6,
+      5
+    ],
+    "approx_size_mc": [
+      43,
+      36
+    ],
+    "id": "E-82",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #83",
+    "mc_x": 2637,
+    "mc_z": -2956,
+    "px_x": 861.1,
+    "px_y": 82.7,
+    "bbox_px": [
+      860,
+      81,
+      862,
+      84
+    ],
+    "pixel_count": 9,
+    "size_px": [
+      3,
+      4
+    ],
+    "approx_size_mc": [
+      22,
+      29
+    ],
+    "id": "E-83",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #84",
+    "mc_x": -2416,
+    "mc_z": -3215,
+    "px_x": 157.3,
+    "px_y": 46.6,
+    "bbox_px": [
+      154,
+      44,
+      160,
+      50
+    ],
+    "pixel_count": 19,
+    "size_px": [
+      7,
+      7
+    ],
+    "approx_size_mc": [
+      50,
+      50
+    ],
+    "id": "E-84",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #85",
+    "mc_x": -2771,
+    "mc_z": -3277,
+    "px_x": 107.9,
+    "px_y": 38.0,
+    "bbox_px": [
+      107,
+      36,
+      109,
+      40
+    ],
+    "pixel_count": 10,
+    "size_px": [
+      3,
+      5
+    ],
+    "approx_size_mc": [
+      22,
+      36
+    ],
+    "id": "E-85",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #86",
+    "mc_x": -3143,
+    "mc_z": -2957,
+    "px_x": 56.0,
+    "px_y": 82.5,
+    "bbox_px": [
+      54,
+      80,
+      57,
+      85
+    ],
+    "pixel_count": 12,
+    "size_px": [
+      4,
+      6
+    ],
+    "approx_size_mc": [
+      29,
+      43
+    ],
+    "id": "E-86",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #87",
+    "mc_x": 3218,
+    "mc_z": 3156,
+    "px_x": 942.1,
+    "px_y": 934.0,
+    "bbox_px": [
+      939,
+      932,
+      945,
+      937
+    ],
+    "pixel_count": 10,
+    "size_px": [
+      7,
+      6
+    ],
+    "approx_size_mc": [
+      50,
+      43
+    ],
+    "id": "E-87",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  },
+  {
+    "tier": "easy",
+    "name": "Easy Camp #88",
+    "mc_x": -3247,
+    "mc_z": -3262,
+    "px_x": 41.5,
+    "px_y": 40.0,
+    "bbox_px": [
+      41,
+      39,
+      42,
+      41
+    ],
+    "pixel_count": 6,
+    "size_px": [
+      2,
+      3
+    ],
+    "approx_size_mc": [
+      14,
+      22
+    ],
+    "id": "E-88",
+    "tierLabel": "Easy (Blue)",
+    "color": "#38bdf8"
+  }
+];

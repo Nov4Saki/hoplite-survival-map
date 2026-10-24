@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoplite Survival Map Explorer (-3500 to +3500)</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗺️</text></svg>">
+</head>
+<body>
+  <!-- Header Bar -->
+  <header class="app-header">
+    <div class="brand-section">
+      <div class="brand-icon">⚔️</div>
+      <div class="brand-title">
+        HOPLITE SURVIVAL MAP
+        <span class="brand-tag">-3,500 to +3,500</span>
+      </div>
+    </div>
+
+    <!-- Live Status / Stats -->
+    <div class="header-stats">
+      <div class="stat-pill" title="Cursor coordinates on the Minecraft map">
+        <span class="label">Cursor Coords:</span>
+        <span id="headerCursorCoords" class="value coords">X: 0, Z: 0</span>
+      </div>
+      <div class="stat-pill" title="Distance from active reference point to cursor">
+        <span class="label">Distance:</span>
+        <span id="headerDistance" class="value">-- blocks</span>
+      </div>
+      <div class="stat-pill" id="homeBasePill" title="Your configured Home Base">
+        <span class="label">Home Base:</span>
+        <span id="headerHomeStatus" class="value" style="color: #fbbf24;">Not Set</span>
+      </div>
+    </div>
+
+    <!-- Quick Action Controls -->
+    <div class="header-actions">
+      <button id="btnPickHome" class="btn btn-home" title="Click anywhere on the map to place your Home Base">
+        <span>📍</span> Set Home Base
+      </button>
+      <button id="btnPickPlayer" class="btn btn-player" title="Click anywhere on the map to set your Current Location">
+        <span>🧭</span> Set My Location
+      </button>
+      <button id="btnZoomHome" class="btn" title="Center camera on your Home Base">
+        <span>🏰</span> Jump to Home
+      </button>
+      <button id="btnResetView" class="btn" title="Reset zoom to view full -3500 to +3500 world map">
+        <span>🔄</span> Full Map
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Body -->
+  <div class="app-body">
+    <!-- Interactive Map Canvas Container -->
+    <div id="canvasWrapper" class="canvas-wrapper">
+      <canvas id="mapCanvas"></canvas>
+
+      <!-- Floating Tactical HUD (Top Left) -->
+      <div class="map-hud hud-top-left">
+        <div class="hud-card">
+          <div class="hud-title">Navigation Telemetry</div>
+          <div class="hud-coords" id="hudCoordsDisplay">
+            <span style="color: #64748b;">[</span>
+            <span id="hudX">X: 0</span>
+            <span style="color: #64748b;">,</span>
+            <span id="hudZ">Z: 0</span>
+            <span style="color: #64748b;">]</span>
+          </div>
+          <div class="hud-bearing" id="hudBearingDisplay">Heading: -- | Ref: Home Base</div>
+        </div>
+      </div>
+
+      <!-- Floating Scale Bar (Bottom Left) -->
+      <div class="map-hud hud-bottom-left">
+        <div class="scale-bar-container">
+          <div class="scale-bar-text" id="scaleBarText">500 Blocks</div>
+          <div class="scale-bar-line" id="scaleBarLine"></div>
+        </div>
+      </div>
+
+      <!-- Floating Zoom & Center Buttons (Bottom Right) -->
+      <div class="hud-zoom-controls">
+        <button class="zoom-btn" id="btnZoomIn" title="Zoom In (+)">+</button>
+        <button class="zoom-btn" id="btnZoomOut" title="Zoom Out (-)">−</button>
+        <button class="zoom-btn" id="btnRecenter" title="Recenter (0, 0)">⌖</button>
+      </div>
+
+      <!-- Structure Tooltip Overlay -->
+      <div id="mapTooltip" class="hud-card" style="position: absolute; display: none; z-index: 50; pointer-events: none; min-width: 180px;">
+        <div id="tooltipTier" style="font-size: 11px; font-weight: 700; text-transform: uppercase;"></div>
+        <div id="tooltipName" style="font-size: 13px; font-weight: 700; color: #fff;"></div>
+        <div id="tooltipCoords" style="font-family: ui-monospace, monospace; font-size: 12px; color: #38bdf8;"></div>
+        <div id="tooltipDist" style="font-size: 11px; color: #4ade80; font-weight: 600;"></div>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="app-sidebar" id="appSidebar">
+      <!-- Tabs Navigation -->
+      <div class="sidebar-tabs">
+        <div class="sidebar-tab active" data-tab="radarTab">
+          <span>📡</span> Radar
+        </div>
+        <div class="sidebar-tab" data-tab="locationTab">
+          <span>🏰</span> Base & Coords
+        </div>
+        <div class="sidebar-tab" data-tab="layersTab">
+          <span>🗺️</span> Layers & Settings
+        </div>
+      </div>
+
+      <!-- Tab 1: Radar & Nearest Structures -->
+      <div id="radarTab" class="tab-content active">
+        <div class="section-header">
+          <div class="section-title">
+            <span>📡</span> Structure Radar
+          </div>
+          <span class="badge-count" id="totalVisibleCount">133</span>
+        </div>
+
+        <!-- Reference Point Toggle -->
+        <div style="display: flex; gap: 6px; margin-bottom: 8px;">
+          <button id="refFromHome" class="btn btn-home active" style="flex: 1; justify-content: center; font-size: 11px; padding: 6px 8px;">
+            <span>📍</span> From Home Base
+          </button>
+          <button id="refFromPlayer" class="btn btn-player" style="flex: 1; justify-content: center; font-size: 11px; padding: 6px 8px;">
+            <span>🧭</span> From Player Pos
+          </button>
+        </div>
+
+        <!-- Tier Filter Pills -->
+        <div class="radar-filters">
+          <div class="filter-pill active" data-tier="all">All (133)</div>
+          <div class="filter-pill tier-hard" data-tier="hard">🟡 Hard (17)</div>
+          <div class="filter-pill tier-medium" data-tier="medium">🟣 Medium (28)</div>
+          <div class="filter-pill tier-easy" data-tier="easy">🔵 Easy (88)</div>
+        </div>
+
+        <!-- Search Input -->
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" class="search-input" placeholder="Search structure, ID, or coords...">
+        </div>
+
+        <!-- Structure List (Sorted by distance) -->
+        <div class="structure-list" id="structureList">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+
+      <!-- Tab 2: Base & Location Management -->
+      <div id="locationTab" class="tab-content">
+        <!-- Home Base Card -->
+        <div class="config-card">
+          <div class="config-card-header">
+            <div class="config-title" style="color: #fbbf24;">
+              <span>🏰</span> Home Base
+            </div>
+            <span id="baseStatusBadge" class="badge-count" style="background: rgba(245, 158, 11, 0.2); color: #fbbf24;">NOT SET</span>
+          </div>
+
+          <p style="font-size: 12px; color: var(--text-muted); line-height: 1.4;">
+            Drop a pin or enter coordinates to calculate real-time distances to all structures on the map.
+          </p>
+
+          <div class="input-coords-row">
+            <div class="coord-field">
+              <label for="homeXInput">X Coordinate</label>
+              <input type="number" id="homeXInput" class="coord-input" placeholder="e.g. -450" min="-3500" max="3500">
+            </div>
+            <div class="coord-field">
+              <label for="homeZInput">Z Coordinate</label>
+              <input type="number" id="homeZInput" class="coord-input" placeholder="e.g. 1200" min="-3500" max="3500">
+            </div>
+          </div>
+
+          <div class="config-actions">
+            <button id="btnSaveHomeManual" class="btn btn-primary" style="flex: 1;">
+              Save Coords
+            </button>
+            <button id="btnPickHomeSidebar" class="btn btn-home" style="flex: 1;">
+              📍 Pick on Map
+            </button>
+            <button id="btnClearHome" class="btn" title="Clear Home Base">
+              🗑️
+            </button>
+          </div>
+        </div>
+
+        <!-- Player Location Card -->
+        <div class="config-card">
+          <div class="config-card-header">
+            <div class="config-title" style="color: #34d399;">
+              <span>🧭</span> Current Player Location
+            </div>
+            <span class="badge-count" style="background: rgba(16, 185, 129, 0.2); color: #34d399;">ACTIVE</span>
+          </div>
+
+          <p style="font-size: 12px; color: var(--text-muted); line-height: 1.4;">
+            Keep your live coordinates updated while playing on Hoplite.
+          </p>
+
+          <div class="input-coords-row">
+            <div class="coord-field">
+              <label for="playerXInput">X Coordinate</label>
+              <input type="number" id="playerXInput" class="coord-input" value="127" min="-3500" max="3500">
+            </div>
+            <div class="coord-field">
+              <label for="playerZInput">Z Coordinate</label>
+              <input type="number" id="playerZInput" class="coord-input" value="123" min="-3500" max="3500">
+            </div>
+          </div>
+
+          <!-- Quick Paste Minecraft /tp or F3 string -->
+          <div class="coord-field" style="margin-top: 4px;">
+            <label for="f3PasteInput">Paste Coords or /tp Command</label>
+            <input type="text" id="f3PasteInput" class="coord-input" placeholder="e.g. X: 127, Z: 123 or /tp 127 ~ 123">
+          </div>
+
+          <div class="config-actions">
+            <button id="btnSavePlayerManual" class="btn btn-player" style="flex: 1;">
+              Update Player Pos
+            </button>
+            <button id="btnPickPlayerSidebar" class="btn" style="flex: 1;">
+              🧭 Click Map
+            </button>
+          </div>
+
+          <!-- Bearing to Home -->
+          <div id="playerHomeTelemetry" style="font-size: 11px; padding: 8px; background: rgba(0, 0, 0, 0.3); border-radius: 6px; color: var(--text-muted); display: none;">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+
+        <!-- Custom Waypoints -->
+        <div class="config-card">
+          <div class="config-card-header">
+            <div class="config-title" style="color: #38bdf8;">
+              <span>📌</span> Custom Waypoints
+            </div>
+            <button id="btnAddWaypoint" class="btn btn-card">+ Add Pin</button>
+          </div>
+
+          <div id="waypointList" style="display: flex; flex-direction: column; gap: 6px; max-height: 180px; overflow-y: auto;">
+            <!-- Populated by JS -->
+            <div style="font-size: 11px; color: var(--text-dim); text-align: center; padding: 10px;">
+              Right-click the map or click "+ Add Pin" to mark portals, mines, or stashes.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3: Layers & Settings -->
+      <div id="layersTab" class="tab-content">
+        <div class="section-title">
+          <span>⚙️</span> Map Display Layers
+        </div>
+
+        <!-- Hard Structures Toggle -->
+        <div class="toggle-item">
+          <div class="toggle-label">
+            <div class="toggle-title" style="color: var(--tier-hard);">
+              <span>🟡</span> Hard Structures
+            </div>
+            <div class="toggle-desc">Yellow outline boxes (Fortresses, Strongholds)</div>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="layerToggleHard" checked>
+            <span class="slider" style="background-color: var(--tier-hard);"></span>
+          </label>
+        </div>
+
+        <!-- Medium Structures Toggle -->
+        <div class="toggle-item">
+          <div class="toggle-label">
+            <div class="toggle-title" style="color: var(--tier-medium);">
+              <span>🟣</span> Medium Structures
+            </div>
+            <div class="toggle-desc">Purple outline boxes (Outposts, Towers)</div>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="layerToggleMedium" checked>
+            <span class="slider" style="background-color: var(--tier-medium);"></span>
+          </label>
+        </div>
+
+        <!-- Easy Structures Toggle -->
+        <div class="toggle-item">
+          <div class="toggle-label">
+            <div class="toggle-title" style="color: var(--tier-easy);">
+              <span>🔵</span> Easy Structures
+            </div>
+            <div class="toggle-desc">Blue outline boxes (Camps, Shrines, Huts)</div>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="layerToggleEasy" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <!-- Coordinate Grid Toggle -->
+        <div class="toggle-item">
+          <div class="toggle-label">
+            <div class="toggle-title">
+              <span>📐</span> Coordinate Grid & Axis
+            </div>
+            <div class="toggle-desc">World lines every 500/1000 blocks</div>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="layerToggleGrid" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <!-- Distance Rings Toggle -->
+        <div class="toggle-item">
+          <div class="toggle-label">
+            <div class="toggle-title">
+              <span>⭕</span> Home Distance Rings
+            </div>
+            <div class="toggle-desc">500m, 1000m, 2000m radius radar circles</div>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="layerToggleRings" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <!-- Guidance Line Toggle -->
+        <div class="toggle-item">
+          <div class="toggle-label">
+            <div class="toggle-title">
+              <span>📏</span> Target Vector Line
+            </div>
+            <div class="toggle-desc">Direct laser guideline to selected target</div>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="layerToggleGuidance" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <!-- Structure Outlines Highlight Toggle -->
+        <div class="toggle-item">
+          <div class="toggle-label">
+            <div class="toggle-title">
+              <span>✨</span> Glowing Map Badges
+            </div>
+            <div class="toggle-desc">Highlight markers directly on map canvas</div>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="layerToggleBadges" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <!-- Clean Map Toggle -->
+        <div class="toggle-item">
+          <div class="toggle-label">
+            <div class="toggle-title">
+              <span>🖼️</span> Pixel-Perfect Sharp Rendering
+            </div>
+            <div class="toggle-desc">Preserve authentic Minecraft pixel blocks</div>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="layerTogglePixelated" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <!-- Data Management -->
+        <div style="margin-top: 16px; display: flex; flex-direction: column; gap: 8px;">
+          <div class="section-title">
+            <span>💾</span> Data Backup & Export
+          </div>
+          <div style="display: flex; gap: 8px;">
+            <button id="btnExportData" class="btn" style="flex: 1;">
+              📥 Export Data
+            </button>
+            <button id="btnImportData" class="btn" style="flex: 1;">
+              📤 Import Data
+            </button>
+            <input type="file" id="importFileInput" accept=".json" style="display: none;">
+          </div>
+          <button id="btnResetAll" class="btn" style="color: #ef4444; border-color: rgba(239, 68, 68, 0.3);">
+            ⚠️ Reset All Saved Data
+          </button>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Right-Click Context Menu -->
+  <div id="contextMenu" class="context-menu">
+    <div class="context-item" id="ctxSetHome">
+      <span>📍</span> Set Home Base Here
+    </div>
+    <div class="context-item" id="ctxSetPlayer">
+      <span>🧭</span> Set My Location Here
+    </div>
+    <div class="context-item" id="ctxAddWaypoint">
+      <span>📌</span> Add Custom Waypoint Here
+    </div>
+    <div class="context-divider"></div>
+    <div class="context-item" id="ctxCopyCoords">
+      <span>📋</span> Copy Coordinates (X, Z)
+    </div>
+    <div class="context-item" id="ctxCopyTp">
+      <span>⚡</span> Copy /tp Command
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Scripts -->
+  <script src="map_image_data.js"></script>
+  <script src="structures_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
